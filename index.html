@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyFetch Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SkyFetch Weather</h1>
+            <form id="weather-form">
+                <input type="text" id="city-input" placeholder="Enter a city name..." autocomplete="off" required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="recent-searches" class="recent-searches"></div>
+        </header>
+
+        <main>
+            <section id="current-weather" class="hidden">
+                </section>
+
+            <section id="forecast-section" class="hidden">
+                <h2>5-Day Forecast</h2>
+                <div id="forecast-container" class="forecast-grid">
+                    </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
